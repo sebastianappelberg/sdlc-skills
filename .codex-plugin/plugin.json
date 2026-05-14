@@ -1,0 +1,12 @@
+{
+  "name": "sdlc-skills",
+  "version": "0.1.0",
+  "description": "Software-development skills for Codex: TDD, debugging, brainstorming, code review, and collaboration patterns. Adapted from obra/superpowers-skills.",
+  "author": {
+    "name": "Sebastian Appelberg",
+    "email": "sebastian.appelberg@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": ["skills", "sdlc", "tdd", "debugging"],
+  "skills": "./skills/"
+}
