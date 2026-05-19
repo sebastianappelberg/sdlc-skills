@@ -8,8 +8,8 @@
   "plugins": [
     {
       "name": "sdlc-skills",
-      "source": "./",
-      "description": "Software-development skills adapted from obra/superpowers-skills."
+      "source": "./plugins/sdlc-skills",
+      "description": "Software-development skills."
     }
   ]
 }
