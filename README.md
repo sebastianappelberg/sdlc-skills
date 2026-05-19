@@ -1,8 +1,6 @@
 # sdlc-skills
 
-A library of 31 software-development skills (TDD, systematic debugging, brainstorming, code review, collaboration patterns, and more), packaged as a plugin for both **Claude Code** and **OpenAI Codex**.
-
-Adapted from [`obra/superpowers-skills`](https://github.com/obra/superpowers-skills) (MIT, archived 2025-10-27). Skills are the same content; the directory layout is flattened to `skills/<name>/SKILL.md` so both Claude Code and Codex can discover them with their default loaders.
+Skills sourced from https://github.com/obra/superpowers but modified to fit my needs. 
 
 ## Install
 
@@ -43,11 +41,8 @@ Refer to [Codex plugin docs](https://developers.openai.com/codex/plugins) for th
 └── README.md                # this file
 ```
 
-## What changed from upstream
-
-- **Flattened layout.** Upstream nested skills as `skills/<category>/<skill>/SKILL.md`; here they're at `skills/<skill>/SKILL.md`. The original category is preserved as a `category:` field in each SKILL.md's frontmatter and indexed in [`skills/README.md`](skills/README.md).
-- **Helper scripts in `using-skills/`** (`find-skills`, `skill-run`) were carried over verbatim. They assume the upstream nested layout and a `~/.config/superpowers/skills/` install location, so they will not work out-of-the-box in this fork. Treat them as reference; rewrite if you want them functional.
-
 ## Credit
 
-All skill content is the work of the [`obra/superpowers-skills`](https://github.com/obra/superpowers-skills) authors and contributors, used under MIT.
+All skill content is the work of the [`obra/superpowers`](https://github.com/obra/superpowers) authors and contributors, used under MIT.
+
+Inspiration taken from https://github.com/mattpocock/skills too. 
