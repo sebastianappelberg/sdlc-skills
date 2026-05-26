@@ -1,0 +1,25 @@
+{
+  "name": "sdlc-skills-evals",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "eval": "tsx src/run.ts",
+    "smoke": "tsx src/run.ts run --skill brainstorming --scenarios smoke --samples 1",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@earendil-works/pi-coding-agent": "0.75.4",
+    "@earendil-works/pi-ai": "0.75.4",
+    "typebox": "1.1.38",
+    "yaml": "2.9.0",
+    "zod": "3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "24.12.4",
+    "tsx": "4.20.3",
+    "typescript": "5.9.3",
+    "vitest": "3.2.4"
+  }
+}

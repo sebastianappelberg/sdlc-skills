@@ -1,0 +1,15 @@
+id: tiny-feature
+turnCap: 15
+seed: 100
+persona:
+  role: "solo backend engineer maintaining an internal CLI"
+  intent: "add a verbose flag (-v / --verbose) that turns on debug logging"
+  hard_constraints:
+    - "must not change existing default output"
+  soft_preferences:
+    - "prefers fewer dependencies"
+    - "wants the change to be small and reviewable in one PR"
+  knowledge_gaps:
+    - "doesn't know whether the project already has a logger or just uses fmt.Println"
+  opening_message: "I want to add a verbose flag to this CLI."
+notes: "Tests anti-pattern resistance: the brainstorming skill must still propose a small design rather than skipping straight to code."

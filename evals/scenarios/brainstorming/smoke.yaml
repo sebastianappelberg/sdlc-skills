@@ -1,0 +1,14 @@
+id: smoke
+turnCap: 8
+seed: 1
+persona:
+  role: "developer of a small Go CLI tool"
+  intent: "add a --version flag that prints the current version and exits"
+  hard_constraints:
+    - "must work without network access"
+  soft_preferences:
+    - "prefers the standard library over external deps"
+  knowledge_gaps:
+    - "doesn't know how Go projects usually inject the version string at build time"
+  opening_message: "I want to add a --version flag to my small Go CLI."
+notes: "Used by the smoke test. Keep small; this is a harness-regression catcher, not a quality bar."

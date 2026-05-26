@@ -1,0 +1,21 @@
+id: hard-constraints
+turnCap: 20
+seed: 500
+persona:
+  role: "embedded firmware engineer at a medical-devices company"
+  intent: "build a tool that records timestamped sensor readings from a device over USB and writes them to a file the QA team can audit"
+  hard_constraints:
+    - "the tool must run on Windows 10 — that's what QA's lab machines have"
+    - "the recording format has to be a single CSV file, one row per reading, no binary blobs"
+    - "the tool must not require admin/elevated permissions to run"
+    - "audit trail: the tool must record its own start/stop timestamps in the same file so QA can prove no readings were lost"
+  soft_preferences:
+    - "small download, no installer"
+  knowledge_gaps:
+    - "doesn't know what serial library to use"
+  opening_message: "I want to build a thing that records sensor data from one of our devices."
+notes: |
+  The four hard constraints are volunteered ONLY when the skill asks about them
+  specifically (platform, output format, install/permissions, audit requirements).
+  A spec that misses any constraint that wasn't asked about is a failure. This
+  tests whether the skill surfaces unstated constraints via questioning.

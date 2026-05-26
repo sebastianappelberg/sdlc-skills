@@ -1,0 +1,19 @@
+scenarios:
+  - id: smoke
+    file: smoke.yaml
+    sha256: f93c49e596a471f138f2e04ff419cde2435d54c46c2e597bee962a5af2774830
+  - id: tiny-feature
+    file: tiny-feature.yaml
+    sha256: 4236f59580d2f81050cd6087d29582481edd8112bc8335b29523dc2e8119adc6
+  - id: small-cli
+    file: small-cli.yaml
+    sha256: 2569aacbbf047cd633f8d4088b4374fefe25cd95b16a051ad13cef20c820b93e
+  - id: decomposable-platform
+    file: decomposable-platform.yaml
+    sha256: 567454aaee052e66e5dd38706033f10c3ce07439a1e0990281ec5314053a3e18
+  - id: ambiguous-fix
+    file: ambiguous-fix.yaml
+    sha256: f0a890b4d00f5a5330dadf2a107f2c76814662947524972ae4e09cf9c360b1ef
+  - id: hard-constraints
+    file: hard-constraints.yaml
+    sha256: bc1d4789ebc00d5e06db05889353e0b1eabb9798d8fa9cb81d98d335dc751685

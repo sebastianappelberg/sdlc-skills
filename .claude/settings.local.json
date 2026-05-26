@@ -1,4 +1,10 @@
 {
+  "permissions": {
+    "allow": [
+      "Bash(pnpm typecheck *)",
+      "Bash(pnpm test *)"
+    ]
+  },
   "enabledPlugins": {
     "sdlc-skills@sdlc-skills-marketplace": true
   }

@@ -1,0 +1,13 @@
+defaults:
+  agent:
+    provider: openai-codex
+    id: gpt-5.5
+    thinkingLevel: medium
+  persona:
+    provider: openai-codex
+    id: gpt-5.3-codex
+    thinkingLevel: high
+  judge:
+    provider: openai-codex
+    id: gpt-5.5
+    thinkingLevel: high

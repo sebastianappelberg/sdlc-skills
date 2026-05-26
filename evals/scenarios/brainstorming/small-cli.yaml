@@ -1,0 +1,18 @@
+id: small-cli
+turnCap: 20
+seed: 200
+persona:
+  role: "solo backend engineer"
+  intent: "wants a small CLI that re-posts liked tweets to Mastodon"
+  hard_constraints:
+    - "no database"
+    - "must run as a single Go binary"
+    - "must be runnable from cron on a Linux server"
+  soft_preferences:
+    - "prefers fewer dependencies over fancy abstractions"
+    - "small, readable code is more important than feature completeness"
+  knowledge_gaps:
+    - "doesn't know which Mastodon library to use"
+    - "doesn't know whether Twitter still has a usable API for reading likes"
+  opening_message: "I want to build a thing that mirrors my Twitter likes to Mastodon."
+notes: "Standard happy path. Intentionally incomplete — skill should surface the storage question (how to remember which tweets were already mirrored without a DB)."

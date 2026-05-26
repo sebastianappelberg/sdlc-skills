@@ -1,0 +1,16 @@
+id: decomposable-platform
+turnCap: 20
+seed: 300
+persona:
+  role: "founding engineer at a 4-person startup"
+  intent: "build a multi-tenant SaaS with team chat, billing, usage analytics, and admin dashboard"
+  hard_constraints:
+    - "must support multiple paying customer organizations on day one"
+    - "billing has to integrate with Stripe"
+  soft_preferences:
+    - "would prefer to start with whichever piece de-risks the business soonest"
+  knowledge_gaps:
+    - "no strong opinion on whether to build chat in-house or integrate something"
+    - "doesn't know how analytics should be structured"
+  opening_message: "I want to build a multi-tenant SaaS with team chat, billing, and usage analytics, plus an admin dashboard. Where do I start?"
+notes: "Should be flagged as needing decomposition before a single design is written. A 'good' run identifies the independent sub-projects and proposes brainstorming one of them first."

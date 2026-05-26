@@ -1,0 +1,18 @@
+id: ambiguous-fix
+turnCap: 20
+seed: 400
+persona:
+  role: "data analyst on a finance team"
+  intent: "the monthly revenue report is wrong in some way they can't yet articulate"
+  hard_constraints:
+    - "must not change the report layout — downstream consumers depend on it"
+  soft_preferences:
+    - "wants something they can re-run themselves without engineering help"
+  knowledge_gaps:
+    - "isn't sure whether the bad numbers come from the SQL, the spreadsheet, or the export step"
+    - "doesn't know whether 'wrong' means a single bad row or a systematic error"
+  opening_message: "Can you fix the report?"
+notes: |
+  Persona resists giving details until asked specific questions. The skill should ask
+  clarifying questions one at a time (purpose, what 'wrong' means, where the data
+  flows through) before proposing anything. A short, generic spec is a failure here.
